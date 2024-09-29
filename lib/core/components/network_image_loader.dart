@@ -18,7 +18,10 @@ class NetworkImageLoader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.all(Radius.circular(radius)),
+      borderRadius: BorderRadius.only(
+        topLeft: Radius.circular(radius),
+        topRight: Radius.circular(radius),
+      ),
       child: CachedNetworkImage(
         imageUrl: imageUrl,
         fit: fit,

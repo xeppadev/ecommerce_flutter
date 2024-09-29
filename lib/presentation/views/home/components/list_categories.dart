@@ -1,9 +1,4 @@
-class CategoryModel {
-  final String name;
-  final String? image, route;
-
-  CategoryModel({required this.name, this.image, this.route});
-}
+import 'package:app_flutter_gps/models/category_model.dart';
 
 List<CategoryModel> categories = [
   CategoryModel(name: "All Categories"),

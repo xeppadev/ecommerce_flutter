@@ -1,7 +1,9 @@
 import 'package:app_flutter_gps/core/components/search.dart';
 import 'package:app_flutter_gps/core/constants/colors.dart';
 import 'package:app_flutter_gps/core/constants/variables.dart';
+import 'package:app_flutter_gps/presentation/widget/home/offer_flash.dart';
 import 'package:app_flutter_gps/presentation/widget/home/offers_carousel_categories.dart';
+import 'package:app_flutter_gps/presentation/widget/home/popular_product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -48,6 +50,11 @@ class HomeView extends StatelessWidget {
               child: CustomScrollView(
                 slivers: <Widget>[
                   SliverToBoxAdapter(child: Offerscarouselandcategories()),
+                  SliverToBoxAdapter(child: PopularProduct()),
+                  SliverPadding(
+                    padding: EdgeInsets.symmetric(vertical: paddingDefault * 2),
+                    sliver: SliverToBoxAdapter(child: OfferFlash()),
+                  )
                 ],
               ),
             ),

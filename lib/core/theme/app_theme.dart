@@ -25,7 +25,8 @@ class AppTheme {
         elevatedButtonTheme: elevatedButtonThemeData,
         textButtonTheme: textButtonThemeData,
         navigationBarTheme: navigationBarThemeData,
-        inputDecorationTheme: lightInputDecorationTheme
+        inputDecorationTheme: lightInputDecorationTheme,
+        outlinedButtonTheme: outlinedButtonTheme()
         //Falta  outlinedButtonTheme, inputDecorationTheme, checkboxTheme, dataTableTheme
         );
   }
